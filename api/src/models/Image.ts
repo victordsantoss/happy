@@ -2,8 +2,7 @@ import { Entity, Column, PrimaryGeneratedColumn, ManyToOne, JoinColumn } from "t
 import Orphanage from "./Orphanage";
 
 @Entity('images')
-export default class Image{
-
+export default class Image {
     @PrimaryGeneratedColumn('increment')
     id: number;
 
@@ -13,5 +12,4 @@ export default class Image{
     @ManyToOne(() => Orphanage, orphanage => orphanage.images)
     @JoinColumn({ name: 'orphanage_id' })
     orphanage: Orphanage;
-
 }
