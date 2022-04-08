@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo } from "react-icons/fi";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 
 import Sidebar from "../components/Sidebar";
 import mapIcon from "../utils/mapIcon";
@@ -18,7 +16,7 @@ interface Orphanage {
   about: string,
   instructions: string,
   opening_hours: string,
-  open_on_weekend: string;
+  open_on_weekends: string;
   images: Array<{
     url: string,
     id: number
@@ -114,17 +112,19 @@ export default function Orphanage() {
                 Segunda à Sexta <br />
                 {orphanage.opening_hours}
               </div>
-              {
-                orphanage.open_on_weekend ? <div className="open-on-weekends dont-open">
-                  <FiInfo size={32} color="#39CC83" />
+              {orphanage.open_on_weekends ? (
+                <div className='open-on-weekends'>
+                  <FiInfo size={32} color='#39CC83' />
                   Atendemos <br />
-                  fim de semana
-                </div> : <div className="open-on-weekends">
-                  <FiInfo size={32} color="#FF669D" />
-                  Não atendemos <br />
-                  fim de semana
+                  Fim de Semana
                 </div>
-              }
+              ) : (
+                <div className='open-on-weekends dont-open'>
+                  <FiInfo size={32} color='#ff669d' />
+                  Não atendemos <br />
+                  Fim de Semana
+                </div>
+              )}
             </div>
 
             {/* <PrimaryButton type="button">

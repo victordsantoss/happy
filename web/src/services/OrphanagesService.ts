@@ -7,3 +7,7 @@ export async function getOrphanages() {
 export async function getOrphanageById(orphanageId: number){
     return api.get(`/orphanages/${orphanageId}`)
 }
+
+export async function createOrphanage(data: Object){
+    return api.post('/orphanages', data);
+}
