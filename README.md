@@ -51,11 +51,11 @@ Esta aplicação foi desenvolvida durante a **Next Level Week #3**, projeto da [
 
 > Configurando o Projeto:
 
-    Nas pastas **api** e **web** execute: yarn install
+    Nas pastas api e web execute: yarn install
 
 > Rodar migrations
 
-    Na pasta **api**, execute: yarn typeorm migration:run
+    Na pasta api, execute: yarn typeorm migration:run
 
 
 ## 🏃 Executando
