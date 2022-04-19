@@ -37,13 +37,13 @@ Esta aplicação foi desenvolvida durante a **Next Level Week #3**, projeto da [
 
 > Pré-requisitos
 
-    Possuir o [Node.js](https://nodejs.org/en/) 16.11.
+* [Node.js](https://nodejs.org/en/) 16.11.
     
-    Possuir o [Git](https://git-scm.com/).
+* [Git](https://git-scm.com/).
 
-    Possuir um gerenciador de pacotes, [Yarn](https://yarnpkg.com/) ou [NPM](https://www.npmjs.com/).
+* [Yarn](https://yarnpkg.com/) ou [NPM](https://www.npmjs.com/).
 
-    Possuir o [Expo](https://expo.io/).
+* [Expo](https://expo.io/) ou similar.
 
 > Clonando o Projeto na sua máquina:
 
