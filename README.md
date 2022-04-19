@@ -37,13 +37,13 @@ Esta aplicação foi desenvolvida durante a **Next Level Week #3**, projeto da [
 
 > Pré-requisitos
 
-    É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** 16.11.
+    Possuir o [Node.js](https://nodejs.org/en/) 16.11.
     
-    É **necessário** possuir o **[Git](https://git-scm.com/)**.
+    Possuir o [Git](https://git-scm.com/).
 
-    É **necessário** possuir um gerenciador de pacotes, **[Yarn](https://yarnpkg.com/)** ou **[NPM](https://www.npmjs.com/)**.
+    Possuir um gerenciador de pacotes, [Yarn](https://yarnpkg.com/) ou [NPM](https://www.npmjs.com/).
 
-    É **necessário** ter o **[Expo](https://expo.io/)**.
+    Possuir o [Expo](https://expo.io/).
 
 > Clonando o Projeto na sua máquina:
 
@@ -68,21 +68,3 @@ Esta aplicação foi desenvolvida durante a **Next Level Week #3**, projeto da [
 > Para executar o **api**, utilize:
 
     yarn dev
-
-
-## Happy - NLW 03
-
-
-
-### 
-Node 16.11.1
-
-### Como executar 
-    npm start
-    yarn dev
-
-#### api
-##### Migrations
-    yarn typeorm migrations:create -n create_orphanages
-    yarn typeorm migrations:run
-    yarn typeorm migration:revert
